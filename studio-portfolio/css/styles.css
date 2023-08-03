@@ -1,0 +1,221 @@
+@font-face {
+  /*roboto-regular-latin*/
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/raleway-v28-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --color-hover: #2196f3;
+  --color-white: #fff;
+  --color-black: #212121;
+  --color-grey: #757575;
+  --color-button: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+}
+a {
+  text-decoration: none;
+} /* убрали подчеркивание с посыланий */
+ul {
+  list-style-type: none;
+} /* убрали кружочки в списке  */
+p {
+  color: var(--color-grey);
+}
+/*header*/
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: #000000;
+}
+.header-logo .accent {
+  color: var(--color-hover);
+}
+.header-logo:hover {
+  color: var(--color-hover);
+}
+
+.header-link {
+  font-weight: 500;
+  line-height: 1.17;
+  color: var(--color-black);
+}
+.header-link:hover {
+  color: var(--color-hover);
+}
+
+.contact-link {
+  font-weight: 500;
+  line-height: 1.17;
+
+  color: var(--color-grey);
+}
+.contact-link:hover {
+  color: var(--color-hover);
+}
+
+.hero-section {
+  background: #2f303a;
+}
+.hero-titlle {
+  font-weight: 900;
+  line-height: 1.36;
+  font-size: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--color-white);
+  text-align: center;
+  background-color: var(--color-hover);
+  border-color: var(--color-white);
+}
+.hero-button:hover {
+  background-color: rgb(243, 235, 235);
+  color: var(--color-hover);
+
+  /*benefite section*/
+}
+.benefite-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.benefite-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+}
+/*team section*/
+.personal-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+}
+.personal-job {
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-grey);
+}
+
+/* footer*/
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--color-white);
+}
+.footer-logo .accent {
+  color: var(--color-hover);
+}
+.footer-logo:hover {
+  color: var(--color-hover);
+}
+
+.footer-fon {
+  background-color: #2f303a;
+}
+.address {
+  font-style: normal;
+  color: var(--color-white);
+}
+.address:hover {
+  color: var(--color-hover);
+}
+.mail-tel {
+  font-style: normal;
+  color: #ffffff99;
+}
+.mail-tel:hover {
+  font-style: normal;
+  color: var(--color-hover);
+}
+/*portfolio*/
+.button-our-work {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: var(--color-black);
+  background-color: var(--color-button);
+  border-color: var(--color-white);
+}
+.button-our-work:hover {
+  background-color: var(--color-hover);
+  color: var(--color-white);
+}
+.title-our-work {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  color: var(--color-black);
+}
+.p-our-work {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: left;
+  color: var(--color-grey);
+}
